@@ -3,7 +3,7 @@ let score="50abc"
 console.log(typeof score); // string
 console.log(typeof(score));//string
 
-let valueInNumber = Number(score) //n 
+let valueInNumber = Number(score) //number
 console.log(typeof valueInNumber); // it will show it as number but it will print NaN
 console.log(valueInNumber); // NaN not a number will be printed 
 
@@ -59,3 +59,4 @@ num1=num2=num3=2+2 // it make code messy and not readable
 let gameCounter =100
 ++gameCounter
 console.log(gameCounter) //101
+
