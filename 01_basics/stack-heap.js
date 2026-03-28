@@ -40,3 +40,62 @@ function add(n) {
 let res = add(5);     
 
 console.log(res);     // 6
+
+
+
+/*
+================= STACK vs HEAP (JavaScript Summary) =================
+
+STACK:
+- Stores primitive values (number, string, boolean, null, undefined, bigint, symbol)
+- Copy by VALUE → independent copies
+- Fast, fixed size
+
+HEAP:
+- Stores objects (object, array, function)
+- Variables store REFERENCE (memory address)
+- Copy by REFERENCE → shared data
+- Dynamic size
+
+KEY RULE:
+- Primitive → copied
+- Object → referenced
+
+IMPORTANT CASES:
+
+1. Assignment:
+   let a = 10;
+   let b = a;        // copy (independent)
+
+   let obj1 = {};
+   let obj2 = obj1;  // same reference
+
+2. Mutation:
+   obj2.name = "x";  // affects obj1 too (shared heap)
+
+3. Reassignment:
+   obj2 = {};        // new object (no effect on obj1)
+
+4. Shallow Copy:
+   let copy = { ...obj };  
+   // only first level copied, nested still shared
+
+5. Deep Copy:
+   JSON.parse(JSON.stringify(obj));
+   // fully independent object
+
+6. Functions:
+   - Primitives → passed by value
+   - Objects → reference is copied (can mutate original)
+
+7. const:
+   - Cannot reassign reference
+   - CAN modify object contents
+
+8. Comparison:
+   {} === {} → false (different references)
+   obj1 === obj2 → true only if same reference
+
+ONE-LINER:
+"Primitives copy values, objects copy references."
+*/
