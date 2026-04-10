@@ -6,11 +6,13 @@ let age = 25;
 function greet(name) {
   console.log("Hello " + name);
 }
-
+function greet(name) {
+  console.log("kya hal hai  " + name);
+}
 // Object
 let person = {
   name: "Arun",
-  age: 25
+  age: 24
 };
 
 // Function using object
