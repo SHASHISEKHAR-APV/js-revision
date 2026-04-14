@@ -6,6 +6,15 @@ let age = 25;
 function greet(name) {
   console.log("Hello " + name);
 }
+console.log(
+  typeof num,   // number
+  typeof str,   // string
+  typeof bool,  // boolean
+  typeof undef, // undefined
+  typeof nul,   // object (special case)
+  typeof big,   // bigint
+  typeof sym    // symbol
+);
 function greet(name) {
   console.log("kya hal hai  " + name);
 }
