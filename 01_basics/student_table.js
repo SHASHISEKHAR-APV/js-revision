@@ -5,8 +5,8 @@ const student1 = {
   course: "Computer Science",
   marks: {
     math: 85,
-    physics: 78,
-    chemistry: 88
+    DSA: 78,
+    FOO: 88
   },
   address: {
     city: "Chennai",
@@ -21,8 +21,8 @@ const student2 = {
   course: "Information Technology",
   marks: {
     math: 90,
-    physics: 82,
-    chemistry: 79
+    DSA: 82,
+    FOO: 79
   },
   address: {
     city: "Bangalore",
@@ -45,7 +45,7 @@ const college = {
 college.establishedYear = 2000;
 
 student1.marks.math = 95;
-student2.marks.physics = 88;
+student2.marks.DSA = 88;
 
 college.students[0].address.city = "Mumbai";
 college.students[1].address.city = "Hyderabad";
@@ -71,8 +71,8 @@ college.students.push({
   course: "AI",
   marks: {
     math: 88,
-    physics: 91,
-    chemistry: 85
+    DSA: 91,
+    FOO: 85
   },
   address: {
     city: "Delhi",
