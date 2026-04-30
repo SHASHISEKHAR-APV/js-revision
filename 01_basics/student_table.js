@@ -29,9 +29,24 @@ const student2 = {
     pincode: 560001
   }
 };
-
+const student3 = {
+  id: 2,
+  name: "Bob",
+  age: 22,
+  course: "Information Technology",
+  marks: {
+    math: 90,
+    DSA: 82,
+    FOO: 79
+  },
+  address: {
+    city: "Bangalore",
+    pincode: 560001
+  }
+};
 student1.email = "alice@example.com";
 student2.email = "bob@example.com";
+student3.email = "mohan@exmaple.com";
 
 student1.age = 23;
 student2.course = "Software Engineering";
